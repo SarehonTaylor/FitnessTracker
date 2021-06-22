@@ -12,7 +12,7 @@ exercises: [
 {
     type: {
         type: String,
-        trimL true,
+        trim: true,
         required: 'Enter a type"'
     },
     name: {

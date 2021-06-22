@@ -14,7 +14,33 @@ exercises: [
         type: String,
         trimL true,
         required: 'Enter a type"'
-    }
+    },
+    type: {
+        type: String,
+        trim: true,
+        required: 'Enter a type'
+    },
+    type: {
+        type: String,
+        trim: true,
+        required: 'Enter a type'
+    },
+    type: {
+        type: String,
+        trim: true,
+        required: 'Enter a type'
+    },
+    type: {
+        type: String,
+        trim: true,
+        required: 'Enter a type'
+    },
+    type: {
+        type: String,
+        trim: true,
+        required: 'Enter a type'
+    },
+    
 
 
 ]

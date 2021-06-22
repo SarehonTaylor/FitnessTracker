@@ -15,10 +15,10 @@ exercises: [
         trimL true,
         required: 'Enter a type"'
     },
-    type: {
+    name: {
         type: String,
         trim: true,
-        required: 'Enter a type'
+        required: 'Enter a name for your exercise'
     },
     type: {
         type: String,

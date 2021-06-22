@@ -20,27 +20,27 @@ exercises: [
         trim: true,
         required: 'Enter a name for your exercise'
     },
-    type: {
-        type: String,
-        trim: true,
+    distance: {
+        type: Number,
+        required: 'Enter a distance'
+    },
+    duration: {
+        type: Number,
+        required: 'Enter an amount'
+    },
+    weight: {
+        type: Number,
         required: 'Enter a type'
     },
-    type: {
-        type: String,
-        trim: true,
-        required: 'Enter a type'
+    reps: {
+        type: Number,
+        required: 'Enter an amount'
     },
-    type: {
-        type: String,
-        trim: true,
-        required: 'Enter a type'
-    },
-    type: {
-        type: String,
-        trim: true,
-        required: 'Enter a type'
-    },
+    sets: {
+        type: Number,
+        required: 'Enter an amount'
+            }
+        },
+    ]
+});
     
-
-
-]

@@ -31,7 +31,7 @@ exercises: [
     },
     weight: {
         type: Number,
-        required: 'Enter a type'
+        required: 'Enter a weight'
     },
     reps: {
         type: Number,

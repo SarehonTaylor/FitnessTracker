@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 
-mongoose.connect('mongodb://localhost/workout', {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 const workoutSeed = [
@@ -19,6 +20,20 @@ const workoutSeed = [
         reps: 10,
         sets: 4,
       },
+      {
+        type: 'resistance',
+        name: 'YEEEEEEEE',
+        duration: 40,
+        weight: 100,
+        reps: 10,
+        sets: 4,
+      },
+      {
+        type: 'cardio',
+        name: 'Run',
+        distance: 20,
+        duration: 20
+      }
     ],
   },
   {
@@ -132,6 +147,6 @@ db.Workout.deleteMany({})
     process.exit(0);
   })
   .catch((err) => {
-    console.error(err);
+    console.error(err.message);
     process.exit(1);
   });
